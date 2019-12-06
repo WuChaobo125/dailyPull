@@ -4,6 +4,7 @@ Easy used diary generaotr
 go run main.go
 
 Example:
+
 2020/1/2 (Thu)
 
 6:00AM
