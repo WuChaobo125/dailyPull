@@ -1,44 +1,30 @@
 # dailyPull
-Easy used diary generaotr
+Easy used todo list/diary generaotr
 
 go run main.go
 
-Example:
+<-dummy diary->
 
-2020/1/2 (Thu)
+--------------------------
 
-6:00AM
+Enter option: 0 for todolist; 1 for time based diary
 
-7:00AM
+->0
 
-8:00AM
+Enter year:
 
-9:00AM
+->2020
 
-10:00AM
+Enter month:
 
-11:00AM
+->2
 
-12:00PM
+Enter date:
 
-1:00PM
+->1
 
-2:00PM
+Enter period:
 
-3:00PM
+->200
 
-4:00PM
-
-5:00PM
-
-6:00PM
-
-7:00PM
-
-8:00PM
-
-9:00PM
-
-10:00PM
-
-11:00PM
+Your note is generated.
