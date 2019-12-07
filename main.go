@@ -9,6 +9,12 @@ import (
 	"strings"
 )
 
+//m2d stores the dates of each month
+var m2d = make(map[int]int)
+var mon30 = [4]int{4, 6, 9, 11}
+var mon31 = [7]int{1, 3, 5, 7, 8, 10, 12}
+
+
 func isLeapYear(year int) bool {
 	if year%4 == 0 {
 		if year%100 == 0 {
@@ -23,10 +29,6 @@ func isLeapYear(year int) bool {
 	return false
 }
 
-//m2d stores the dates of each month
-var m2d = make(map[int]int)
-var mon30 = [4]int{4, 6, 9, 11}
-var mon31 = [7]int{1, 3, 5, 7, 8, 10, 12}
 
 func isValidatedDate(y int, m int, d int) bool {
 	if y > 1752 && m < 13 && m > 0 {
