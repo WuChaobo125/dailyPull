@@ -5,6 +5,7 @@ go run main.go
 
 Following example shows how to generate the diary for 2020
 
+
 Work & Study Log Generator
 
 --------------------------
