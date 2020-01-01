@@ -123,10 +123,10 @@ func main() {
 	reader := bufio.NewReader(os.Stdin)
 	var year, month, day, period, option int
 	var year2str, month2str, day2str, period2str, option2str string
-	fmt.Println("<-dummy diary->")
+	fmt.Println("Work & Study Log Generator")
 	fmt.Println("--------------------------")
 	for {
-		fmt.Println("Enter option: 0 for todolist; 1 for time based diary")
+		fmt.Println("Choose type(0 or 1): 0 for todolist; 1 for time based diary")
 		fmt.Print("->")
 		option2str, _ = reader.ReadString('\n')
 		option2str = strings.Replace(option2str, "\r\n", "", -1)
@@ -135,6 +135,8 @@ func main() {
 			break
 		}
 	}
+
+	fmt.Println("Enter the start date to be generated")
 
 	for {
 		fmt.Println("Enter year:")
@@ -167,7 +169,7 @@ func main() {
 		fmt.Println("The input date doesn't exist!")
 	}
 
-	fmt.Println("Enter period:")
+	fmt.Println("Enter period(how many days to be generated)")
 	fmt.Print("->")
 	period2str, _ = reader.ReadString('\n')
 	period2str = strings.Replace(period2str, "\r\n", "", -1)
